@@ -26,6 +26,12 @@ class FavoriteScreen extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.favorite),
             title: Text(pair.asLowerCase),
+            trailing: IconButton(
+              onPressed: () {
+                appState.hapus(pair);
+              },
+              icon: Icon(Icons.face),
+            ),
           ),
       ],
     );

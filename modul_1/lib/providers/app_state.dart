@@ -19,4 +19,11 @@ class AppState extends ChangeNotifier {
     }
     notifyListeners();
   }
+
+  void hapus(pair) {
+    if (favorites.contains(pair)) {
+      favorites.remove(pair);
+    }
+    notifyListeners();
+  }
 }

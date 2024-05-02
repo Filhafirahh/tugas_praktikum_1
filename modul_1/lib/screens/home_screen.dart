@@ -43,6 +43,12 @@ class _HomeScreenState extends State<HomeScreen> {
     ];
 
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('2000016071'),
+        centerTitle: true,
+        backgroundColor: Colors.deepOrange,
+        foregroundColor: Colors.white,
+      ),
       bottomNavigationBar: BottomNavigationBar(
         items: items,
         currentIndex: currentIndex,
